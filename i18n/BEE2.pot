@@ -4,20 +4,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/BEEmod/BEE2.4/issues\n"
-"POT-Creation-Date: 2024-05-28 13:22+1000\n"
+"POT-Creation-Date: 2025-02-17 16:54-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: loadScreen.py
 msgid "Skipped!"
 msgstr ""
 
 #: loadScreen.py
+#, python-brace-format
 msgid "Version: {ver}"
 msgstr ""
 
@@ -38,6 +39,7 @@ msgid "Show:"
 msgstr ""
 
 #: loadScreen.py
+#, python-brace-format
 msgid "Logs - {ver}"
 msgstr ""
 
@@ -133,8 +135,7 @@ msgstr ""
 msgid "Gesture - Camera"
 msgstr ""
 
-#. i18n: Special token, must be exactly two lines, shown via game_text if an
-#. error occurs in Coop.
+#. This uses HTML syntax.
 #: user_errors.py
 msgid ""
 "Compile Error. Open the following URL\n"
@@ -143,6 +144,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "Invalid <code>{option}=</code>\"<code>{value}</code>\" for {kind} "
 "\"<var>{id}</var>\"!"
@@ -150,21 +152,25 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "Option <code>{option}</code> is required for {kind} \"<var>{id}</var>\"!"
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "Duplicate {kind} ID \"<var>{id}</var>\". Change the ID of one of them."
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "Unknown {kind} ID \"<var>{id}</var>\"."
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The item \"<var>{item}</var>\" is not a {kind}!<br>Instance: "
 "<code>{inst}</code>"
@@ -172,6 +178,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The instance \"<var>{inst}</var>\" does not have any connection "
 "information defined!"
@@ -203,6 +210,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The instance <code>{inst}</code> does not exist, meaning the map cannot "
 "be compiled! Try other configurations for this item, it may be the case "
@@ -218,6 +226,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "No I/O configuration specified for special indicator item "
 "\"<var>{item}</var>\"! This is required for antlines to work."
@@ -225,6 +234,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The instance named \"<var>{item}</var>\" is not recognised! If you just "
 "swapped styles and exported, you will need to restart Portal 2. Otherwise"
@@ -233,6 +243,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The instance \"<var>{inst}</var>\" is reciving inputs, but none were "
 "configured in the item. Check for reuse of the instance in multiple "
@@ -241,6 +252,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "No corridors were defined for the <var>{orient}_{mode}_{dir}</var> group."
 " Try moving this door back onto a wall."
@@ -254,6 +266,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The map appears to be missing the {kind} door. This could be caused by an"
 " export from BEE2 while the game was open - close and reopen the game if "
@@ -265,6 +278,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The map contains both singleplayer and coop entry/exit corridors. This "
 "can happen if they are manually added using the \"{stylevar}\" stylevar. "
@@ -289,11 +303,13 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "Unrecognised special cube type \"<var>{type}</var>\"!"
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "Two or more cubes/droppers have the same timer value "
 "(<var>{timer}</var>). These are used to link a cube and dropper item "
@@ -303,6 +319,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The specified cube has a timer value <var>{timer}</var>, which does not "
 "match any droppers. A dropper should be placed with a matching timer "
@@ -311,6 +328,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "Dropper above custom cube of type <var>{type}</var> is already linked! "
 "Custom cubes convertdroppers above them into their type, to allow having "
@@ -357,6 +375,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The custom barrier item \"<var>{name}</var>\" must be connected via "
 "output to one or more regular glass or grating items. It will then change"
@@ -372,6 +391,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "A Barrier Hole (\"<var>{hole}</var>\") does not have sufficent space. The"
 " entire highlighted yellow area should be occupied by continous "
@@ -380,6 +400,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "A Barrier Hole (\"<var>{hole}</var>\") was misplaced. The item must be "
 "placed against a glass/grating/etc sheet, which it will then cut a hole "
@@ -393,6 +414,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "A Barrier Hole (\"<var>{hole}</var>\") was placed on top of a "
 "\"<var>{barrier}</var>\" barrier, but this barrier does not support this "
@@ -402,6 +424,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "A Barrier Hole (\"<var>{hole}</var>\") was placed on top of a "
 "\"<var>{barrier}</var>\" barrier, which does not allow holes."
@@ -437,6 +460,7 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "The template \"<var>{id}</var>\" has a {type} with two visgroups: "
 "\"<var>{groups}</var>\". Brushes andoverlays in templates may currently "
@@ -445,26 +469,31 @@ msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "No item ID for fizzler instance \"<var>{inst}</var>\"!"
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "No fizzler type for {item} (\"<var>{inst}</var>\")!"
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "No model specified for one side of \"{id}\" fizzlers."
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid "Instance lookup path \"<code>{path}</code>\" returned no instances."
 msgstr ""
 
 #. This uses HTML syntax.
 #: user_errors.py
+#, python-brace-format
 msgid ""
 "Instance lookup path \"<code>{path}</code>\" was expected to provide one "
 "instance, but it returned multiple instances:"
@@ -502,6 +531,7 @@ msgstr ""
 
 #. i18n: Tooltip format for compiler limit bars.
 #: app/CompilerPane.py
+#, python-brace-format
 msgid ""
 "{count}/{max} ({frac:0.##%}):\n"
 "{blurb}"
@@ -575,6 +605,7 @@ msgid "Full"
 msgstr ""
 
 #: app/CompilerPane.py
+#, python-brace-format
 msgid ""
 "{desc}\n"
 "\n"
@@ -634,7 +665,6 @@ msgstr ""
 msgid "Entity"
 msgstr ""
 
-#. i18n: Progress bar description
 #: app/CompilerPane.py
 msgid ""
 "Entities are the things in the map that have functionality. Removing "
@@ -650,7 +680,6 @@ msgstr ""
 msgid "Overlay"
 msgstr ""
 
-#. i18n: Progress bar description
 #: app/CompilerPane.py
 msgid ""
 "Overlays are smaller images affixed to surfaces, like signs or indicator "
@@ -728,6 +757,7 @@ msgid "Compile Options"
 msgstr ""
 
 #: app/CompilerPane.py
+#, python-brace-format
 msgid "Compiler Options - {ver}"
 msgstr ""
 
@@ -797,6 +827,7 @@ msgstr ""
 
 #. i18n: Tooltip when specific styles are used
 #: app/StyleVarPane.py
+#, python-brace-format
 msgid "Style: {styles}"
 msgid_plural "Styles: {styles}"
 msgstr[0] ""
@@ -814,6 +845,7 @@ msgstr ""
 
 #. i18n: Order of lines in the tooltip.
 #: app/StyleVarPane.py
+#, python-brace-format
 msgid ""
 "{desc}\n"
 "{defaults}\n"
@@ -845,6 +877,7 @@ msgid "None!"
 msgstr ""
 
 #: app/SubPane.py
+#, python-brace-format
 msgid "Hide/Show the \"{window}\" window."
 msgstr ""
 
@@ -857,10 +890,12 @@ msgid "BEE2 - Export Complete"
 msgstr ""
 
 #: app/UI.py
+#, python-brace-format
 msgid "BEEMOD {version} - {game}"
 msgstr ""
 
 #: app/UI.py
+#, python-brace-format
 msgid "{n} option"
 msgid_plural "{n} options"
 msgstr[0] ""
@@ -975,6 +1010,7 @@ msgid "Music: "
 msgstr ""
 
 #: app/UI.py
+#, python-brace-format
 msgid "{down_arrow} Use Suggested {down_arrow}"
 msgstr ""
 
@@ -1029,10 +1065,12 @@ msgid "Fill empty spots in the palette with random items."
 msgstr ""
 
 #: app/__init__.py
+#, python-brace-format
 msgid "BEEMOD {version} Error!"
 msgstr ""
 
 #: app/__init__.py
+#, python-brace-format
 msgid ""
 "An error occurred: \n"
 "{err}\n"
@@ -1065,18 +1103,21 @@ msgid "Coop"
 msgstr ""
 
 #: app/backup.py
+#, python-brace-format
 msgid "Do you wish to delete {n} map?"
 msgid_plural "Do you wish to delete {n} maps?"
 msgstr[0] ""
 msgstr[1] ""
 
 #: app/backup.py
+#, python-brace-format
 msgid ""
 "This map is already in the game directory. Do you wish to overwrite it? "
 "({mapname})"
 msgstr ""
 
 #: app/backup.py
+#, python-brace-format
 msgid ""
 "This filename is already in the backup. Do you wish to overwrite it? "
 "({mapname})"
@@ -1155,6 +1196,7 @@ msgid "Reload the map list."
 msgstr ""
 
 #: app/backup.py
+#, python-brace-format
 msgid "BEEMOD {version} - Backup / Restore Puzzles"
 msgstr ""
 
@@ -1303,6 +1345,7 @@ msgid "Excursion Funnels accept a on/off input and a directional input."
 msgstr ""
 
 #: app/contextWin.py
+#, python-brace-format
 msgid ""
 "{generic_rot} However when this is set to Reflection Cube, this item can "
 "instead rotated on the floor to face 360 degrees."
@@ -1372,6 +1415,7 @@ msgid "Change which signs are specified by each timer value."
 msgstr ""
 
 #: app/corridor_selector.py app/selector_win.py
+#, python-brace-format
 msgid "Author: {authors}"
 msgid_plural "Authors: {authors}"
 msgstr[0] ""
@@ -1440,10 +1484,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: app/gameMan.py
+#, python-brace-format
 msgid "Export to \"{game}\"..."
 msgstr ""
 
 #: app/gameMan.py
+#, python-brace-format
 msgid "Export to \"{game}\"*..."
 msgstr ""
 
@@ -1461,6 +1507,7 @@ msgid "BEE2 - Add Game"
 msgstr ""
 
 #: app/gameMan.py
+#, python-brace-format
 msgid "Select the folder where the game executable is located ({appname})..."
 msgstr ""
 
@@ -1497,12 +1544,14 @@ msgid "Please enter a name for this game!"
 msgstr ""
 
 #: app/gameMan.py
+#, python-brace-format
 msgid ""
 "Are you sure you want to delete \"{game}\"?\n"
 "(BEE2 will quit, this is the last game set!)"
 msgstr ""
 
 #: app/gameMan.py
+#, python-brace-format
 msgid "Are you sure you want to delete \"{game}\"?"
 msgstr ""
 
@@ -1595,14 +1644,17 @@ msgid "Credits..."
 msgstr ""
 
 #: app/item_properties.py
+#, python-brace-format
 msgid "BEE2 - {item}"
 msgstr ""
 
 #: app/item_properties.py
+#, python-brace-format
 msgid "Settings for \"{item}\""
 msgstr ""
 
 #: app/item_properties.py
+#, python-brace-format
 msgid ""
 "Timer Delay:\n"
 "        ({tim:00})"
@@ -1631,10 +1683,12 @@ msgid "Search:"
 msgstr ""
 
 #: app/menu_bar.py
+#, python-brace-format
 msgid "{game} Puzzle Folder"
 msgstr ""
 
 #: app/menu_bar.py
+#, python-brace-format
 msgid "{game} Folder"
 msgstr ""
 
@@ -1773,30 +1827,35 @@ msgid "Speed:"
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Launch Game?"
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Minimise BEE2?"
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Launch Game and minimise BEE2?"
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Quit BEE2?"
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Launch Game and quit BEE2?"
@@ -1829,6 +1888,7 @@ msgid ""
 msgstr ""
 
 #: app/optionWindow.py
+#, python-brace-format
 msgid ""
 "{cache_reset}\n"
 "\n"
@@ -2153,10 +2213,12 @@ msgid "Hide"
 msgstr ""
 
 #: app/paletteUI.py
+#, python-brace-format
 msgid "Delete Palette \"{name}\""
 msgstr ""
 
 #: app/paletteUI.py
+#, python-brace-format
 msgid "Hide Palette \"{name}\""
 msgstr ""
 
@@ -2165,6 +2227,7 @@ msgid "Enter a name:"
 msgstr ""
 
 #: app/paletteUI.py
+#, python-brace-format
 msgid "Are you sure you want to delete \"{palette}\"?"
 msgstr ""
 
@@ -2222,20 +2285,24 @@ msgid "Enter the name of the group for this palette, or \"\" to ungroup."
 msgstr ""
 
 #: app/richTextBox.py
+#, python-brace-format
 msgid "Open \"{url}\" in the default browser?"
 msgstr ""
 
 #: app/selector_win.py
+#, python-brace-format
 msgid "Color: R={r}, G={g}, B={b}"
 msgstr ""
 
 #. i18n: Tooltip for colour swatch.
 #: app/selector_win.py
+#, python-brace-format
 msgid "BEE2 - {subtitle}"
 msgstr ""
 
 #. i18n: Window titles.
 #: app/selector_win.py
+#, python-brace-format
 msgid "Preview - {item}"
 msgstr ""
 
@@ -2267,10 +2334,12 @@ msgid "Select Suggested"
 msgstr ""
 
 #: app/signage_ui.py
+#, python-brace-format
 msgid "Signage: {name}"
 msgstr ""
 
 #: app/signage_ui.py
+#, python-brace-format
 msgid "Unknown Signage: {id}"
 msgstr ""
 
@@ -2311,10 +2380,12 @@ msgid "Transcript:"
 msgstr ""
 
 #: app/voiceEditor.py
+#, python-brace-format
 msgid "BEE2 - Configure \"{item}\""
 msgstr ""
 
 #: app/itemconfig/__init__.py
+#, python-brace-format
 msgid "{name} ({page}/{count})"
 msgstr ""
 
@@ -2363,6 +2434,7 @@ msgid "Exporting"
 msgstr ""
 
 #: exporting/__init__.py
+#, python-brace-format
 msgid "BEE2 Export - {game}"
 msgstr ""
 
@@ -2379,18 +2451,21 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: exporting/compiler.py
+#, python-brace-format
 msgid ""
 "Compiler file {file} missing. You will need to verify the game's files in"
 " Steam to get these files back. You can then export again."
 msgstr ""
 
 #: exporting/compiler.py
+#, python-brace-format
 msgid ""
 "Copying compiler file {file} failed. Ensure {game}'s map compiler is not "
 "running."
 msgstr ""
 
 #: exporting/compiler.py
+#, python-brace-format
 msgid ""
 "Copying compiler file {file} failed. Ensure {game}'s map compiler is not "
 "running. The webserver for the error display may also be running, quit "
@@ -2398,10 +2473,12 @@ msgid ""
 msgstr ""
 
 #: exporting/compiler.py
+#, python-brace-format
 msgid "No compiler files were found in \"{folder}\"."
 msgstr ""
 
 #: exporting/items.py
+#, python-brace-format
 msgid ""
 "Style includes old definition for {item}. Override the item package "
 "object instead."
@@ -2414,6 +2491,7 @@ msgid ""
 msgstr ""
 
 #: exporting/vpks.py
+#, python-brace-format
 msgid ""
 "The VPK \"{filename}\" could not be parsed. If this was made by BEE, "
 "delete it, otherwise check if it is corrupt."
@@ -2424,54 +2502,65 @@ msgid "Portal Stories: Mel"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "Package directory does not exist: \"{path}\""
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "Package directory did not contain any packages: \"{path}\""
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "Package file has the incorrect file format: {path}\n"
 "Valid formats are zip archives (.zip or .bee_pack) and VPKs (.vpk)"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "Potential package file has no info.txt: {path}"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "Package has no ID defined: {path}"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "Package \"{pak_id}\" could not be enabled - {req} is not installed."
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "Package \"{pak_id}\" could not be enabled - required package \"{req}\" "
 "not installed."
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "Unknown object type \"{obj_type}\" with ID \"{obj_id}\" in package "
 "\"{pak_id}\"!"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "TemplateBrush \"{id}\" in package \"{pak_id}\" no longer needs to be "
 "defined in info.txt. Use a bee2_template_conf entity instead."
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid "No ID defined for \"{obj_type}\" object type in \"{pak_id}\" package!"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "Duplicate package with id \"{pak_id}\"!\n"
 "If you just updated the mod, delete any old files in packages/.\n"
@@ -2480,6 +2569,7 @@ msgid ""
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "The ID \"{obj_id}\" was used twice for a {obj_type} in the packages "
 "\"{pak1}\" and \"{pak2}\"!"
@@ -2496,12 +2586,14 @@ msgid ""
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "one of the following locations:\n"
 "{loc}"
 msgstr ""
 
 #: packages/__init__.py
+#, python-brace-format
 msgid ""
 "{msg}\n"
 "Get the packages from \"https://github.com/BEEmod/BEE2-items\" and place "
@@ -2513,20 +2605,24 @@ msgid "No description!"
 msgstr ""
 
 #: packages/corridor.py
+#, python-brace-format
 msgid ""
 "Duplicate corridor option ID \"{option}\" in corridor group for style "
 "\"{group}\"!"
 msgstr ""
 
 #: packages/quote_pack.py
+#, python-brace-format
 msgid "No \"Quotes\" key in config for quote pack {id}!"
 msgstr ""
 
 #: packages/quote_pack.py
+#, python-brace-format
 msgid "Multiple \"Quotes\" keys found in config for quote pack {id}!"
 msgstr ""
 
 #: packages/quote_pack.py
+#, python-brace-format
 msgid "Invalid response kind \"{name}\" in config for quote pack {id}!"
 msgstr ""
 
