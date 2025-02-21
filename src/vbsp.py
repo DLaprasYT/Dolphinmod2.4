@@ -971,8 +971,7 @@ def change_brush(vmf: VMF) -> None:
 
     if make_bottomless:
         LOGGER.info('Creating Bottomless Pits...')
-        from precomp import bottomlessPit
-        bottomlessPit(vmf, max_height)
+        bottomlessPit_make(vmf, max_height)
         LOGGER.info('Done!')
     if make_goo_mist:
         LOGGER.info('Adding Goo Mist...')
